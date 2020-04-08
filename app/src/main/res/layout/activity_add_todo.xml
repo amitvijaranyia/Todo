@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="26dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTodoActivity">
+
+    <EditText
+        android:id="@+id/etHeading"
+        android:maxLines="2"
+        android:hint="Title of your Todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etTodo"
+        android:maxLines="3"
+        android:layout_marginTop="5dp"
+        android:hint="Enter your Todo Task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:text="Priority of the Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbHighPriority"
+            android:text="High"
+            android:background="@color/colorHighPriority"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbMediumPriority"
+            android:text="Medium"
+            android:background="@color/colorMediumPriority"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbLowPriority"
+            android:text="Low"
+            android:background="@color/colorLowPriority"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:layout_weight="1"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="ADD"
+        android:layout_marginTop="10dp"
+        android:background="#008000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>
